@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "attrconf"
+version = "0.1.0"
+description = "Tree based configuration library build on top of attrs.org"
+authors = ["Calvin Maree <calvin@linuxmail.org>"]
+
+[tool.poetry.dependencies]
+fluxutil = { path = "../fluxutil", develop = true }
+python = "^3.9"
+attrs = "^21.2.0"
+attrs-strict = "*"
+
+[tool.poetry.dev-dependencies]
+poetry-scripts = "^0.0.1"
+black = {version = "^21.9-beta.0", allow-prereleases = true}
+mypy = "^0.910"
+snoop = "*"
+
+[build-system]
+requires = ["poetry-core>=1.1.6"]
+build-backend = "poetry.masonry.api"
