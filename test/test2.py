@@ -1,7 +1,7 @@
 import inspect 
 import attr
 
-from fluxutil.attr import dictify, strict
+from fluxutil.dictify import dictify, strict
 from fluxutil.print_function import print_function
 
 from attrconf import config_node
